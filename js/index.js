@@ -1,6 +1,13 @@
 //aqui pongo un event listener para q el html imprima lo q digo en JS
 document.addEventListener("DOMContentLoaded", () => {
   createSquares();
+  const keys = document.querySelectorAll(".keyboard-row button");
+  for (let i = 0; i < keys.length; i++) {
+    keys[i].onclick = ({ target }) => {
+      const key = target.getAttribute("data-key");
+      console.log(key);
+    };
+  }
   //creo una funcion con el nombre que quiero y los pasos que sigo son:
   //en la variable gameboard almaceno el valor de 'conseguir' un elemnto atraves del id 'board' que puse en HTML
   function createSquares() {
