@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return "rgb(181, 159, 59)";
   }
   function handleSubmitWord() {
-    const currentWordArray = getCurrentWordArr();
-    if (currentWordArr.length !== 5) {
+    const currentWordArray = getCurrentWordArray();
+    if (currentWordArray.length !== 5) {
       window.alert("Word must be 5 letters");
     }
 
